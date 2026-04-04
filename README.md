@@ -30,8 +30,10 @@ This repository is therefore a **code-only minimal reproduction repository**.
 The script generates:
 
 - `minimal_reproduction_results/Figure_1_Combined.png`
+- `minimal_reproduction_results/Figure_1_Combined.tiff`
 - `minimal_reproduction_results/Figure_1_Combined.pdf`
 - `minimal_reproduction_results/Figure_2_Combined.png`
+- `minimal_reproduction_results/Figure_2_Combined.tiff`
 - `minimal_reproduction_results/Figure_2_Combined.pdf`
 
 ## Environment used
