@@ -1,19 +1,22 @@
 # suction-furs-minimal-reproduction
+
 Minimal R reproduction script for the main figures based on Supplementary Data File 2.
-suction-furs-minimal-reproduction
-# Minimal reproduction of the main figures
 
-This repository contains a minimal R script to reproduce the two main figures from the final 109-study coded dataset.
+## Overview
 
-## Files
+This repository contains a minimal R script to reproduce the main study figures from the final 109-study coded dataset.
 
-- `minimal_reproduction_from_supp_data_file_2.R`
+It supports figure-level minimal reproducibility only and does not reproduce the full Web of Science retrieval, screening, or manual audit workflow.
+
+## Repository contents
+
+- `reproduce_figures_from_supplementary_data_file_2.R`
 
 ## Required input
 
-Place the following file in the same folder as the R script before running:
+Before running the script, place the following file in the `data/` directory:
 
-- `Supplementary Data File 2_Study-level coding.xlsx`
+- `data/Supplementary_Data_File_2.xlsx`
 
 Worksheet name:
 
@@ -21,20 +24,24 @@ Worksheet name:
 
 ## Note
 
-The required input file is provided through the journal submission system for editorial and peer-review purposes and is not mirrored in this public repository.
+The required input file is provided separately through the journal submission system for editorial and peer-review purposes and is not mirrored in this public repository.
 
 This repository is therefore a **code-only minimal reproduction repository**.
 
 ## Output
 
-The script generates:
+The script generates the following files in the `results/` directory:
 
-- `minimal_reproduction_results/Figure_1_Combined.png`
-- `minimal_reproduction_results/Figure_1_Combined.tiff`
-- `minimal_reproduction_results/Figure_1_Combined.pdf`
-- `minimal_reproduction_results/Figure_2_Combined.png`
-- `minimal_reproduction_results/Figure_2_Combined.tiff`
-- `minimal_reproduction_results/Figure_2_Combined.pdf`
+- `results/Fig_1.png`
+- `results/Fig_1.tiff`
+- `results/Fig_1.pdf`
+- `results/Fig_2.png`
+- `results/Fig_2.tiff`
+- `results/Fig_2.pdf`
+- `results/Supplementary_Fig_S3.png`
+- `results/Supplementary_Fig_S3.tiff`
+- `results/Supplementary_Fig_S3.pdf`
+- `results/Supplementary_Table_S3.csv`
 
 ## Environment used
 
@@ -44,24 +51,26 @@ The script generates:
 
 ## Main packages
 
+- `here`
 - `readxl`
-- `readr`
 - `ggplot2`
 - `dplyr`
 - `tidyr`
 - `stringr`
-- `forcats`
 - `patchwork`
 - `ggrepel`
 - `scales`
 - `rlang`
 - `cowplot`
 - `ragg`
+- `tibble`
 
 ## Run
 
+Run the script from the project root:
+
 ```r
-source("minimal_reproduction_from_supp_data_file_2.R")
+source("reproduce_figures_from_supplementary_data_file_2.R")
 ```
 ## Scope
-This script supports figure-level minimal reproducibility from the final coded dataset only. It does not reproduce the full Web of Science retrieval, screening, or manual audit workflow.
+This script supports figure-level minimal reproducibility from the final coded dataset only. It does not reproduce the full Web of Science retrieval, screening, dual-review full-text verification, or manual audit workflow.
