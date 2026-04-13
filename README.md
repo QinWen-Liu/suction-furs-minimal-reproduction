@@ -1,22 +1,22 @@
 # suction-furs-minimal-reproduction
 
-Minimal R reproduction script for the main figures based on Supplementary Data File 2.
+Minimal R reproduction script for the main figures based on ESM_2.xlsx.
 
 ## Overview
 
-This repository contains a minimal R script to reproduce the main study figures from the final 109-study coded dataset.
+This repository contains a minimal R script to reproduce the main study figures from the final manually verified 109-study coded dataset.
 
-It supports figure-level minimal reproducibility only and does not reproduce the full Web of Science retrieval, screening, or manual audit workflow.
+It supports figure-level minimal reproducibility only and does not reproduce the full Web of Science retrieval, screening, dual-review full-text verification, or manual audit workflow.
 
 ## Repository contents
 
-- `reproduce_figures_from_supplementary_data_file_2.R`
+- `reproduce_figures_from_ESM_2.R`
 
 ## Required input
 
 Before running the script, place the following file in the `data/` directory:
 
-- `data/Supplementary_Data_File_2.xlsx`
+- `data/ESM_2.xlsx`
 
 Worksheet name:
 
@@ -24,7 +24,11 @@ Worksheet name:
 
 ## Note
 
-The required input file is provided separately through the journal submission system for editorial and peer-review purposes and is not mirrored in this public repository.
+The current manuscript and supplementary package refer to the final manually verified study-level coding workbook as `ESM_2.xlsx`.
+
+Earlier internal file naming used `Supplementary_Data_File_2.xlsx` in prior versions. The current repository version uses `ESM_2.xlsx` as the expected workbook name.
+
+The required input workbook is provided separately through the journal submission system for editorial and peer-review purposes and is not mirrored in this public repository.
 
 This repository is therefore a **code-only minimal reproduction repository**.
 
@@ -70,7 +74,8 @@ The script generates the following files in the `results/` directory:
 Run the script from the project root:
 
 ```r
-source("reproduce_figures_from_supplementary_data_file_2.R")
+source("reproduce_figures_from_ESM_2.R")
+
 ```
 ## Scope
 This script supports figure-level minimal reproducibility from the final coded dataset only. It does not reproduce the full Web of Science retrieval, screening, dual-review full-text verification, or manual audit workflow.
