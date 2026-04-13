@@ -26,8 +26,6 @@ Worksheet name:
 
 The current manuscript and supplementary package refer to the final manually verified study-level coding workbook as `ESM_2.xlsx`.
 
-Earlier internal file naming used `Supplementary_Data_File_2.xlsx` in prior versions. The current repository version uses `ESM_2.xlsx` as the expected workbook name.
-
 The required input workbook is provided separately through the journal submission system for editorial and peer-review purposes and is not mirrored in this public repository.
 
 This repository is therefore a **code-only minimal reproduction repository**.
